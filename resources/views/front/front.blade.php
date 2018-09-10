@@ -93,14 +93,14 @@
             </div>
         </div>
     </header>
-    <div id="home" class="parallax first-section wow fadeIn" data-stellar-background-ratio="0.4" style="background-image:url('images/slider-bg.png');">
+    <div id="home" class="parallax first-section wow fadeIn" data-stellar-background-ratio="0.4" style="background-image:url('{{ Voyager::image( $slider->fondo ) }}"');">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="text-contant">
                         <h2>
                             <span class="center"><span class="icon"><img src="images/icon-logo.png" alt="#" /></span></span>
-                            <a href="" class="typewrite" data-period="2000" data-type='[ "Bienvenidos a Care System", "We Care Your Health", "We are Expert!" ]'>
+                            <a href="" class="typewrite" data-period="2000" data-type='[ "{{ $slider->titulouno }}", "{{ $slider->titulodos }}", "{{ $slider->titulotres }}" ]'>
                                 <span class="wrap"></span>
                             </a>
                         </h2>
