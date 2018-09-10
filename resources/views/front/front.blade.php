@@ -93,7 +93,7 @@
             </div>
         </div>
     </header>
-    <div id="home" class="parallax first-section wow fadeIn" data-stellar-background-ratio="0.4" style="background-image:url('{{ Voyager::image( $slider->fondo ) }}"');">
+    <div id="home" class="parallax first-section wow fadeIn" data-stellar-background-ratio="0.4" style="background-image:url('{{ Voyager::image( $slider->fondo ) }}');">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
