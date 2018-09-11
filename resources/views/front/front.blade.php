@@ -179,51 +179,27 @@
                 <!-- end col -->
             </div>
             <!-- end row -->
+            {{-- Galerias --}}
             <hr class="hr1">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-widget">
-                        <div class="post-media wow fadeIn">
-                            <a href="images/clinic_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                            <img src="images/clinic_01.jpg" alt="" class="img-responsive">
+                @foreach ($galerias as $galeria)            
+                
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="service-widget">
+                            <div class="post-media wow fadeIn">
+                                <a href="#" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                <img src="{{ Voyager::image( $galeria->imagen ) }}" alt="" class="img-responsive">
+                            </div>
+                            <h3>{{ $galeria->texto }}</h3>
                         </div>
-                        <h3>Digital Control Center</h3>
-                    </div>
-                    <!-- end service -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-widget">
-                        <div class="post-media wow fadeIn">
-                            <a href="images/clinic_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                            <img src="images/clinic_02.jpg" alt="" class="img-responsive">
-                        </div>
-                        <h3>Hygienic Operating Room</h3>
-                    </div>
-                    <!-- end service -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-widget">
-                        <div class="post-media wow fadeIn">
-                            <a href="images/clinic_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                            <img src="images/clinic_03.jpg" alt="" class="img-responsive">
-                        </div>
-                        <h3>Specialist Physicians</h3>
-                    </div>
-                    <!-- end service -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="service-widget">
-                        <div class="post-media wow fadeIn">
-                            <a href="images/clinic_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                            <img src="images/clinic_01.jpg" alt="" class="img-responsive">
-                        </div>
-                        <h3>Digital Control Center</h3>
-                    </div>
-                    <!-- end service -->
-                </div>
+                        <!-- end service -->
+                    </div>               
+                @endforeach
             </div>
+            {{-- Galerias --}}
             <!-- end row -->
         </div>
+       
         <!-- end container -->
     </div>
     <div id="service" class="services wow fadeIn">

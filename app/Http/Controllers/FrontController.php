@@ -7,6 +7,7 @@ use App\Header;
 use App\Slider;
 use App\Informacion;
 use App\Servicio;
+use App\Galeria;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -22,12 +23,13 @@ class FrontController extends Controller
         $slider=Slider::orderBy('id','DESC')->firstOrFail();
         $info=Informacion::orderBy('id','DESC')->firstOrFail();
         $servicio=Servicio::orderBy('id','DESC')->firstOrFail();
+        $galerias=Galeria::orderBy('id','DESC')->take(4)->get();
 
-        //dd($servicio);
+        //dd($galerias);
 
        
 
-        return view('front.front',compact('header','slider','info','servicio'));
+        return view('front.front',compact('header','slider','info','servicio','galerias'));
     }
 
     /**
