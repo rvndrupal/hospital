@@ -6,6 +6,7 @@ use App\Front;
 use App\Header;
 use App\Slider;
 use App\Informacion;
+use App\Servicio;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -20,12 +21,13 @@ class FrontController extends Controller
         $header=Header::orderBy('id','DESC')->firstOrFail();
         $slider=Slider::orderBy('id','DESC')->firstOrFail();
         $info=Informacion::orderBy('id','DESC')->firstOrFail();
+        $servicio=Servicio::orderBy('id','DESC')->firstOrFail();
 
-        //dd($info);
+        //dd($servicio);
 
        
 
-        return view('front.front',compact('header','slider','info'));
+        return view('front.front',compact('header','slider','info','servicio'));
     }
 
     /**
