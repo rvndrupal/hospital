@@ -210,118 +210,59 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="serv">
                                 <span class="icon-service"><img src="images/service-icon1.png" alt="#" /></span>
-                                <h4>PREMIUM FACILITIES</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                <h4>{{ $serviciodos->titulouno }}</h4>
+                                <p>{{ $serviciodos->desuno }}</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="serv">
                                 <span class="icon-service"><img src="images/service-icon2.png" alt="#" /></span>
-                                <h4>LARGE LABORATORY</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                <h4>{{ $serviciodos->titulodos }}</h4>
+                                <p>{{ $serviciodos->desdos }}</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="serv">
                                 <span class="icon-service"><img src="images/service-icon3.png" alt="#" /></span>
-                                <h4>DETAILED SPECIALIST</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                <h4>{{ $serviciodos->titulotres }}</h4>
+                                <p>{{ $serviciodos->destres }}</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="serv">
                                 <span class="icon-service"><img src="images/service-icon4.png" alt="#" /></span>
-                                <h4>CHILDREN CARE CENTER</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                <h4>{{ $serviciodos->titulocuatro }}</h4>
+                                <p>{{ $serviciodos->descuatro }}</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="serv">
                                 <span class="icon-service"><img src="images/service-icon5.png" alt="#" /></span>
-                                <h4>FINE INFRASTRUCTURE</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                <h4>{{ $serviciodos->titulocinco }}</h4>
+                                <p>{{ $serviciodos->descinco }}</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="serv">
                                 <span class="icon-service"><img src="images/service-icon6.png" alt="#" /></span>
-                                <h4>ANYTIME BLOOD BANK</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                <h4>{{ $serviciodos->tituloseis }}</h4>
+                                <p>{{ $serviciodos->desseis }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                {{-- Email uno --}}
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="appointment-form">
-                        <h3><span>+</span> Book Appointment</h3>
-                        <div class="form">
-                            <form action="index.html">
-                                <fieldset>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="row">
-                                            <div class="form-group">
-                                                <input type="text" id="name" placeholder="Your Name" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="row">
-                                            <div class="form-group">
-                                                <input type="email" placeholder="Email Address" id="email" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-section">
-                                        <div class="row">
-                                            <div class="form-group">
-                                                <select class="form-control">
-                                          <option>Day</option>
-                                          <option>Sunday</option>
-                                          <option>Monday</option>
-                                       </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control">
-                                          <option>Time</option>
-                                          <option>AM</option>
-                                          <option>PM</option>
-                                       </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="row">
-                                            <div class="form-group">
-                                                <select class="form-control">
-                                          <option>Doctor Name</option>
-                                          <option>Mr.XYZ</option>
-                                          <option>Mr.ABC</option>
-                                       </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="row">
-                                            <div class="form-group">
-                                                <textarea rows="4" id="textarea_message" class="form-control" placeholder="Your Message..."></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <div class="row">
-                                            <div class="form-group">
-                                                <div class="center"><button type="submit">Submit</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                   
+                   <div class="imagen_servicios">
+                         <img src="{{ Voyager::image( $serviciodos->imagen ) }}" alt="" class="img-servicios" style="width:450px; height:400px; margin: 10px 0 0 0px;">
+                   </div>
+
+                    
+                </div>{{-- email uno --}}
             </div>
         </div>
-    </div>
+    </div>{{-- termina --}}
     <!-- end section -->
 
     <!-- doctor -->
