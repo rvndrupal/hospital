@@ -12,6 +12,7 @@ use App\Doctore;
 use App\Promocione;
 use App\Galeria;
 use App\Testimonio;
+use App\Footer;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -32,12 +33,14 @@ class FrontController extends Controller
         $doctores=Doctore::orderBy('id','DESC')->firstOrFail();
         $promociones=Promocione::orderBy('id','DESC')->take(3)->get();
         $testimonios=Testimonio::orderBy('id','DESC')->take(4)->get();
+        $footer=Footer::orderBy('id','DESC')->firstOrFail();
+        $now = new \DateTime();
 
-        //dd($doctores);
+        //dd($now);
 
        
 
-        return view('front.front',compact('header','slider','info','servicio','galerias','serviciodos','doctores','promociones','testimonios'));
+        return view('front.front',compact('header','slider','info','servicio','galerias','serviciodos','doctores','promociones','testimonios','footer','now'));
     }
 
     /**

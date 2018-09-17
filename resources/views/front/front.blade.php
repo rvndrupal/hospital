@@ -444,7 +444,7 @@
         <div class="container">
             <div class="heading">
                 <span class="icon-logo"><img src="images/icon-logo.png" alt="#"></span>
-                <h2>Get in Touch</h2>
+                <h2>Visítanos</h2>
             </div>
         </div>
         <div class="contact-section">
@@ -490,22 +490,21 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="logo padding">
-                        <a href=""><img src="images/logo.png" alt=""></a>
-                        <p>Locavore pork belly scen ester pine est chill wave microdosing pop uple itarian cliche artisan.</p>
+                        <a href=""><img src="{{ Voyager::image( $footer->logo ) }}" alt=""></a>
+                        <p>{{ $footer->descripcion }}</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="footer-info padding">
-                        <h3>CONTACT US</h3>
-                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> PO Box 16122 Collins Street West Victoria 8007 Australia</p>
-                        <p><i class="fa fa-paper-plane" aria-hidden="true"></i> info@gmail.com</p>
-                        <p><i class="fa fa-phone" aria-hidden="true"></i> (+1) 800 123 456</p>
+                        <h3>CONTACTANOS</h3>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>{{ $footer->desc_contacto }}</p>
+                        
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="subcriber-info">
                         <h3>SUBSCRIBE</h3>
-                        <p>Get healthy news, tip and solutions to your problems from our experts.</p>
+                        <p>{{ $footer->subscribe }}</p>
                         <div class="subcriber-box">
                             <form id="mc-form" class="mc-form">
                                 <div class="newsletter-form">
@@ -535,7 +534,8 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="footer-text">
-                        <p>© 2018. Distributed by <a id="tw" href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
+                        
+                        <p>© {{ $now->format('Y')}}. {{ $footer->distribuido }} <a id="tw" href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
                     </div>
                 </div>
                 <div class="col-md-4">
